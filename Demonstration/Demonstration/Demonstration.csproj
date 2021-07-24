@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>test.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <Authors>PlatonZvonkov</Authors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Users\Flip\Desktop\C#\TemporaryBuilds\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ArrayHelper\ArrayHelper\ArrayHelper.csproj" />
+    <ProjectReference Include="..\..\RectangleHelper\RectangleHelper\RectangleHelper.csproj" />
+  </ItemGroup>
+
+</Project>
